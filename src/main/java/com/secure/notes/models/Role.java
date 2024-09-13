@@ -24,6 +24,7 @@ public class Role {
     @Column(name = "role_id")
     private Integer roleId;
 
+
     @ToString.Exclude
     @Enumerated(EnumType.STRING)
     @Column(name = "role_name",length = 20)
@@ -34,8 +35,11 @@ public class Role {
     @ToString.Exclude
     private Set<User> users =new HashSet<>();
 
+
+
     public Role(AppRole roleName) {
         this.roleName = roleName;
     }
+
 
 }

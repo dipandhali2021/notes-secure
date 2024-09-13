@@ -21,15 +21,12 @@ public class UserDTO {
     private boolean accountNonLocked;
     private boolean credentialsNonExpired;
     private boolean enabled;
-
     private LocalDate credentialsExpiredDate;
     private LocalDate accountExpiredDate;
-
     private String twoFactorSecret;
     private boolean twoFactorEnabled;
     private String signUpMethod;
     private Role role;
-
     private LocalDate createdAt;
     private LocalDate updatedAt;
 }
